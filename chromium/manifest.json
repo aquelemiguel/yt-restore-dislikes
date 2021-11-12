@@ -1,0 +1,11 @@
+{
+  "name": "YT Restore Dislikes",
+  "description": "Restore the dislike count on your YouTube videos.",
+  "version": "1.0",
+  "manifest_version": 3,
+  "background": {
+    "service_worker": "service.js"
+  },
+  "permissions": ["scripting", "webNavigation"],
+  "host_permissions": ["*://*.youtube.com/watch?*"]
+}
