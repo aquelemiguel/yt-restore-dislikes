@@ -1,7 +1,6 @@
 (function () {
   const YT_API_KEY = "YOUR_API_KEY_GOES_HERE";
   const BASE_ENDPOINT = "https://www.googleapis.com/youtube/v3";
-  // const YT_API_KEY = "AIzaSyB4p-o8WWeKTWhgY68KIZ19duWgtOr8DYc";
 
   async function run() {
     fetchDislikes()
