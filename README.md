@@ -17,7 +17,7 @@ Unfortunately, the [YouTube Data API v3](https://developers.google.com/youtube/v
 So, you **must provide your own API key**. Luckily, generating a key is a pretty straightforward process, just follow [YouTube's docs](https://developers.google.com/youtube/v3/getting-started#before-you-start). There is no need to add OAuth 2.0.
 
 ## Installation
-Currently I don't feel like publishing this to the Chrome Web Store because it'll undergo a review process and may very well just get denied. So you'll need to load the extension yourself.
+Currently I don't feel like publishing this to the Chrome Web Store because it'll undergo a review process, it may very well just get denied and the extension likely won't work in a month from now. So you'll need to load the extension yourself.
 
 1. [Download the latest release](https://github.com/aquelemiguel/yt-restore-dislikes/releases/latest) and unzip it.
 2. Once you've generated your API key, open `chromium/script.js` and replace the `YT_API_KEY` variable with your own key (paste between the double quotes). _I might simplify this process in the future._
