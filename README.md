@@ -1,13 +1,15 @@
 # 👎 yt-restore-dislikes
 A Chrome extension for restoring the dislike count on YouTube videos. Firefox in the works.
 
+⚠️ Please note that YouTube has [issued a statement](https://support.google.com/youtube/thread/134791097/update-to-youtube-dislike-counts?hl=en) explaining they are removing access to public dislike data on their API on **December 13th**. This extension is just **a temporary solution to a permanent problem** (and well, a fairly fun learning experience for me), so expect this project to get archived by then.
+
 ## Motivation
 In November 2021, YouTube [published a video](https://www.youtube.com/watch?v=kxOuG8jMIgI) informing they would be making the dislike count invisible for all videos on the plaform. This was a response to "groups of viewers dislike-bombing videos usually because they don't like the creator or what they stand for".
 
 However, the dislike button still remains the most effective crowdsourced tool to combat misinformation, scams and clickbait on YouTube. This measure received overwhelming backlash by the community and content creators alike but is still being pushed forward.
 
 ## Implementation
-The dislike count for any video can still be fetched by Google themselves via the [YouTube Data API v3](https://developers.google.com/youtube/v3).
+At the time of writing, the dislike count for any video can still be fetched by Google themselves via the [YouTube Data API v3](https://developers.google.com/youtube/v3).
 
 What this extension does is simply request the current video's metadata and inject a little HTML to the YouTube webpage, replacing the "Dislike" label with the response - the actual count.
 
