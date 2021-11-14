@@ -2,16 +2,25 @@
   "name": "YT Restore Dislikes",
   "description": "Restore the dislike count on your YouTube videos.",
   "version": "1.0",
-  "manifest_version": 3,
+  "manifest_version": 2,
   "background": {
-    "service_worker": "service.js"
+    "scripts": ["service.js"]
   },
-  "permissions": ["scripting", "webNavigation"],
-  "host_permissions": ["*://*.youtube.com/*"],
+  "permissions": [
+    "tabs",
+    "webNavigation",
+    "*://*.youtube.com/*",
+    "*://*.googleapis.com/youtube/v3/*"
+  ],
   "icons": {
     "16": "/icons/icon_16.png",
     "32": "/icons/icon_32.png",
     "48": "/icons/icon_48.png",
     "128": "/icons/icon_128.png"
+  },
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "aquelemiguel@yt-see-dislikes"
+    }
   }
 }
