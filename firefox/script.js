@@ -1,5 +1,5 @@
 (function () {
-  const YT_API_KEY = "AIzaSyDersCEiKcblvUp6FS9wWl7j-JmLxTh_Oo";
+  const YT_API_KEY = "YOUR_API_KEY_GOES_HERE";
   const BASE_ENDPOINT = "https://www.googleapis.com/youtube/v3";
 
   async function run() {

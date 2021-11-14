@@ -1,7 +1,7 @@
 {
   "name": "YT Restore Dislikes",
   "description": "Restore the dislike count on your YouTube videos.",
-  "version": "1.0",
+  "version": "1.1",
   "manifest_version": 2,
   "background": {
     "scripts": ["service.js"]
